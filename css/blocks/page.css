@@ -1,0 +1,15 @@
+
+/* Page */
+
+.page {
+  line-height: 1.5;
+  font-family: "TT Lakes";
+}
+
+.page__body {
+  margin: 0;
+  background-color:  var(--basic-two);
+  min-width: 320px;
+  overflow-x: hidden;
+}
+

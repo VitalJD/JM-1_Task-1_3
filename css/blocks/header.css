@@ -1,0 +1,20 @@
+/* header */
+
+.header {
+  /* position: fixed;
+  z-index: 9999;
+  margin-bottom: 20px; */
+  background-color: #ffffff;
+  height: 88px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #b8ffec;
+}
+
+.header__inner {
+  width: 100%;
+  display: flex;
+}
+

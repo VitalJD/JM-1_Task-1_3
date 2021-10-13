@@ -1,0 +1,47 @@
+/* header-links */
+
+.header__links {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-width: 96px;
+  margin-left: 16px;
+}
+
+.header__link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header__link-call {
+  background: url("../../img/call.svg") #FF3E79 no-repeat 50% 50%;
+}
+
+.header__link-chat {
+  background: url("../../img/chat.svg") #FF3E79 no-repeat 50% 50%;
+}
+
+.header__link-profile {
+  background: url("../../img/profile.svg") #FF3E79 no-repeat 50% 50%;
+}
+
+.header__link-settings::before {
+  position: absolute;
+  content: "";
+  left: -20px;
+  height: 38px;
+  border-left: 2px solid #eaeaea;
+}
+
+.header__link-settings {
+  background: url("../../img/repair.svg") #FF3E79 no-repeat 50% 50%;
+}
+
+.header__link-search {
+  background: url("../../img/checkstatus.svg") #FF3E79 no-repeat 50% 50%;
+}
+
+.hidden {
+  display: none;
+}

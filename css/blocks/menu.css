@@ -1,0 +1,12 @@
+/* header-menu */
+
+.header__menu {
+  padding: 6px 16px 0 0;
+}
+
+.header__menu-btn {
+  background: url("../../img/burger.svg") #FF3E79 no-repeat 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
