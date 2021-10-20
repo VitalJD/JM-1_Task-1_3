@@ -1,6 +1,6 @@
 /* header-links */
 
-.header__links {
+.header__links, .default {
   position: relative;
   display: flex;
   justify-content: space-between;
