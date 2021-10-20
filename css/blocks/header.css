@@ -1,9 +1,6 @@
 /* header */
 
 .header {
-  /* position: fixed;
-  z-index: 9999;
-  margin-bottom: 20px; */
   background-color: #ffffff;
   height: 88px;
   padding: 0 16px;
@@ -14,7 +11,45 @@
 }
 
 .header__inner {
-  width: 100%;
   display: flex;
 }
 
+
+@media (min-width: 320px) {
+  .header {
+    padding: 0 16px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0 24px;
+  }
+
+  .header__logo {
+    padding-left: 25px;
+  }
+}
+
+
+@media (min-width: 1120px) {
+  .header {
+    width: 420px;
+    position: absolute;
+    margin-bottom: 20px;
+    background-color: var(--basic-two);
+    height: 88px;
+    padding: 0 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+    top: 0;
+    border-bottom: none;
+  }
+
+  .header__logo {
+    display: none;
+  }
+}

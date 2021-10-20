@@ -4,11 +4,11 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  min-width: 96px;
   margin-left: 16px;
 }
 
 .header__link {
+  display: block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -26,12 +26,12 @@
   background: url("../../img/profile.svg") #FF3E79 no-repeat 50% 50%;
 }
 
-.header__link-settings::before {
-  position: absolute;
-  content: "";
-  left: -20px;
-  height: 38px;
-  border-left: 2px solid #eaeaea;
+.header__separator {
+  width: 2px;
+  height: 32px;
+  background-color: #eaeaea;
+  border-radius: 1px;
+  margin: 5px 0 0 16px;
 }
 
 .header__link-settings {
@@ -42,6 +42,85 @@
   background: url("../../img/checkstatus.svg") #FF3E79 no-repeat 50% 50%;
 }
 
-.hidden {
-  display: none;
+
+@media (min-width: 320px) {
+  .hidden {
+    display: none;
+  }
+
+  .header__separator {
+    margin-left: 0;   
+  }
+}
+
+
+@media (min-width: 768px) {
+  .header__links .hidden {
+    display: flex;
+    margin-left: 16px;
+  }
+
+  .header__link-profile {
+    margin-right: 16px;
+  }
+
+  .header__separator {
+    margin: 5px 4px;
+  }
+
+  .header__links .default {
+    display: flex;
+    margin-left: 16px;
+  }
+}
+
+
+@media (min-width: 1120px) {
+  .header__links .hidden {
+    display: none;
+  }
+
+  .header__separator {
+    display: none;
+  }
+
+  .header__links {
+    margin: 32px 16px 0;
+  }
+
+  .header__link-settings {
+    margin-right: 148px;
+  }
+
+  .header__link-settings::before {
+    display: block;
+    content: "Оставить заявку";
+    position: absolute;
+    width: 125px;
+    height: 24px;
+    right: 50px;
+    top: 8px;
+    font-family: TT Lakes;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+  }
+
+  .header__link-checkstatus::before {
+    display: block;
+    content: "Статус ремонта";
+    position: absolute;
+    width: 125px;
+    height: 24px;
+    right: 44px;
+    top: 8px;
+    font-family: TT Lakes;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+  }
 }

@@ -12,7 +12,6 @@
   font-weight: bold;
   font-size: 28px;
   line-height: 40px;
-  /* identical to box height, or 143% */
   letter-spacing: -0.6px;
   color: #1B1C21;
 }
@@ -30,11 +29,10 @@
 
 .main__radio-group {
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
   vertical-align: middle;
   white-space: nowrap;
-  overflow-x: auto;
+  overflow-x: scroll;
   margin: 29px 0 15px 14px;
 }
 
@@ -56,7 +54,6 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-/* identical to box height, or 150% */
   letter-spacing: -0.2px;
   color: #7E7E82;
   padding: 6px 15px 8px 16px;  
@@ -76,18 +73,35 @@
   display: none;
 }
 
-@media (width <= 320px) {
-  
+
+@media (min-width: 768px) {
+  .main__title {
+    padding-left: 24px;
+  }
+
+  .main__radio-group {
+    margin-left: 12px;
+    padding-left: 12px;
+  }
+
+  .main__image {
+    display: none;
+  }
 }
 
-@media (width > 320px) {
-  
+
+@media (min-width: 1120px) {
+  .main__title {
+    margin-top: 42px;
+  }
+
+  .main__radio-group {
+    width: 1063px;
+    overflow-x: hidden;
+  }
+
+  /* input[value="additional-services"] {
+    display: none;
+  } */
 }
 
-@media (width > 768px) {
-  
-}
-
-@media (width > 1120px) {
-  
-}

@@ -10,3 +10,22 @@
   height: 40px;
   border-radius: 50%;
 }
+
+
+
+@media (min-width: 768px) {
+  .header__menu::after {
+    position: absolute;
+    content: "";
+    top: 28px;
+    left: 84px;
+    height: 32px;
+    border-left: 2px solid #eaeaea;
+  }
+}
+
+@media (min-width: 1120px) {
+  .header__menu, .header__menu-btn {
+    display: none;
+  } 
+}
