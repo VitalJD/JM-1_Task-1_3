@@ -33,7 +33,7 @@
 }
 
 
-@media (min-width: 1120px) {
+@media (min-width: 900px) {
   .header {
     width: 420px;
     position: absolute;
@@ -44,8 +44,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    right: 0;
-    top: 0;
+    right: 16px;
+    top: -41px;
     border-bottom: none;
   }
 
