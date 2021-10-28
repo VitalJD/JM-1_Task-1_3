@@ -12,8 +12,7 @@
 }
 
 
-
-@media (min-width: 768px) {
+@media (min-width: 650px) {
   .header__menu::after {
     position: absolute;
     content: "";
@@ -24,7 +23,8 @@
   }
 }
 
-@media (min-width: 1120px) {
+
+@media (min-width: 900px) {
   .header__menu, .header__menu-btn {
     display: none;
   } 

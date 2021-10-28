@@ -69,12 +69,8 @@
   text-align: center;
 }
 
-.hidden {
-  display: none;
-}
 
-
-@media (min-width: 768px) {
+@media (min-width: 650px) {
   .main__title {
     padding-left: 24px;
   }
@@ -90,18 +86,16 @@
 }
 
 
-@media (min-width: 1120px) {
+@media (min-width: 900px) {
   .main__title {
     margin-top: 42px;
   }
 
   .main__radio-group {
-    width: 1063px;
+    width: auto;
+    max-width: 1070px;
+    flex-wrap: wrap;
     overflow-x: hidden;
   }
-
-  /* input[value="additional-services"] {
-    display: none;
-  } */
 }
 
