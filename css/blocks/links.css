@@ -18,6 +18,7 @@
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1B1C21;
+  cursor: pointer;
 }
 
 .header__link-call {
@@ -32,12 +33,13 @@
   background: url("../../img/profile.svg") #FF3E79 no-repeat 50% 50%;
 }
 
-.header__separator {
-  width: 2px;
+.header__link-settings::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  right: 58px;
   height: 32px;
-  background-color: #eaeaea;
-  border-radius: 1px;
-  margin: 5px 0 0 16px;
+  border-left: 2px solid #eaeaea;
 }
 
 .header__link-settings {
@@ -48,57 +50,62 @@
   background: url("../../img/checkstatus.svg") #FF3E79 no-repeat 50% 50%;
 }
 
-
-@media (min-width: 320px) {
-  .hidden {
-    display: none;
-  }
-
-  .header__separator {
-    margin-left: 0;   
-  }
+.hidden {
+  display: none;
 }
 
 
-@media (min-width: 650px) {
+@media (min-width: 768px) {
   .header__links .hidden {
     display: flex;
     margin-left: 16px;
+    cursor: pointer;
   }
 
   .header__link-profile {
-    margin-right: 16px;
-  }
-
-  .header__separator {
-    margin: 5px 4px;
+    margin-right: 20px;
   }
 
   .header__links .default {
     display: flex;
     margin-left: 16px;
   }
+
+  .header__link-settings {
+    margin-left: 20px;
+  }
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 1120px) {
   .header__links .hidden {
     display: none;
   }
 
-  .header__separator {
-    display: none;
+  .links .default {
+    display: flex;
+    cursor: pointer;
   }
 
-  .header__links {
+  .links .default a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .links {
     margin: 32px 16px 0;
   }
 
-  .header__link-settings {
+  /* .header__link-settings::before {
+    display: none;
+  } */
+
+  .link-settings {
     margin-right: 148px;
   }
 
-  .header__link-settings::before {
+  .link-settings::before {
     display: block;
     content: "Оставить заявку";
     position: absolute;
@@ -106,9 +113,11 @@
     height: 24px;
     right: 50px;
     top: 8px;
+    z-index: 10;
+    cursor: pointer;
   }
 
-  .header__link-checkstatus::before {
+  .link-checkstatus::before {
     display: block;
     content: "Статус ремонта";
     position: absolute;
@@ -116,5 +125,7 @@
     height: 24px;
     right: 44px;
     top: 8px;
+    z-index: 10;
+    cursor: pointer;
   }
 }

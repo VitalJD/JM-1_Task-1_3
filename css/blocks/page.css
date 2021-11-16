@@ -8,10 +8,10 @@
 
 .page__body {
   position: relative;
+  min-width: 320px;
   max-width:1120px;
   margin: 0 auto;
   background-color:  var(--basic-two);
-  min-width: 320px;
   overflow-x: hidden;
 }
 

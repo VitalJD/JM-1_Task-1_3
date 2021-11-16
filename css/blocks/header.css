@@ -22,7 +22,7 @@
 }
 
 
-@media (min-width: 650px) {
+@media (min-width: 768px) {
   .header {
     padding: 0 24px;
   }
@@ -33,23 +33,8 @@
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 1120px) {
   .header {
-    width: 420px;
-    position: absolute;
-    margin-bottom: 20px;
-    background-color: var(--basic-two);
-    height: 88px;
-    padding: 0 16px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    right: 16px;
-    top: -41px;
-    border-bottom: none;
-  }
-
-  .header__logo {
     display: none;
   }
 }

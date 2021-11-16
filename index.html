@@ -20,18 +20,23 @@
             </div>
         </div>
 
-        <ul class="header__links">
-            <li class="header__link-call header__link hidden"><a href="!#"></a></li>
-            <li class="header__link-chat header__link hidden"><a href="!#"></a></li>
-            <li class="header__link-profile header__link hidden"><a href="!#"></a></li>
-            <div class="header__separator"></div>
-            <li class="header__link-settings header__link default"><a href="!#"></a></li>
-            <li class="header__link-checkstatus header__link default"><a href="!#"></a></li>
+        <ul class="header__links links">
+            <li class="header__link-call header__link hidden" title="Заказать звонок"><a href="#"></a></li>
+            <li class="header__link-chat header__link hidden" title="Написать нам"><a href="#"></a></li>
+            <li class="header__link-profile header__link hidden" title="Войти в личный кабинет"><a href="#"></a></li>
+            <li class="header__link-settings link-settings header__link default" title="Заказать ремонт"><a href="#"></a></li>
+            <li class="header__link-checkstatus link-checkstatus header__link default" title="Узнать статус ремонта"><a href="#"></a></li>
         </ul>
     </header>
     
     <main class="main">
-        <h1 class="main__title">Услуги и сервисы</h1>
+        <div class="main__header">
+            <h1 class="main__title">Услуги и сервисы</h1>
+            <ul class="main__links hidden__links">
+                <li class="link-settings header__link default" title="Заказать ремонт"><a href="#"></a></li>
+                <li class="link-checkstatus header__link default" title="Узнать статус ремонта"><a href="#"></a></li>
+            </ul>
+        </div>
 
         <div class="main__radio-group">
             <label class="main__radio-label">
@@ -42,7 +47,7 @@
                 <input class="main__radio-input" type="radio" name="radio-input" value="repaired-devices">
                 <span>Ремонтируемые устройства</span>
             </label>
-            <label class="main__radio-label">
+            <label class="main__radio-label hidden__input">
                 <input class="main__radio-input" type="radio" name="radio-input" value="additional-services">
                 <span>Дополнительные услуги</span>
             </label>
@@ -76,16 +81,11 @@
                 <div class="section__bottom"></div>
             </div>
             <label class="section__btn-read-more" for="read-more"></label>
-            <!-- <button class="section__btn">Читать далее</button> -->
 
-            <div class="section__image hidden-image">
-                <img src="./img/picture-CPS_full.jpg" alt="">
+            <div class="section__image">
+                <img class="cps" src="./img/picture-CPS_full.jpg" alt="">
             </div>
         </section>
-
-        <div class="main__image">
-            <img src="./img/picture-CPS.jpg" alt="">
-        </div>
     </main>
 
     <script src="./js/base.js"></script>
